@@ -1,5 +1,52 @@
 # Changelog
 
+## 1.6.0
+
+### New features:
+
+* Dashboard: Add Lightning balances and services (#3838) @dennisreimann
+* Dashboard: Add Point Of Sale data (#3897) @dennisreimann @dstrukt
+* Greenfield: Basic API Get and Delete operations for apps (#3894) @bolatovumar
+* Greenfield: Add balance endpoint (#3887) @dennisreimann
+* Greenfield: Allow excluding unconfirmed UTXOs when creating a new transaction (https://github.com/btcpayserver/btcpayserver/discussions/3737) @bolatovumar
+* Can disable TLS check for email servers @NicolasDorier
+* Can add sender's name to any field accepting an email destination (for example `Nicolas Dorier <blah@example.com>` rather than just `blah@example.com`) @NicolasDorier
+* Support LNUrl Withdraw in payouts (#3709) @Kukks
+* Can send emails based on invoice events (#3611) @Kukks
+* Dashboard: Added toggle button to switch to store default currency (#3752) @SakshamSolanki
+* Support LN connection string with onion addresses (#3845) @Kukks
+* Add Buda rate provider for CLP (#3766) @Kukks
+* Add Refunds list to Invoice details page @Kukks
+
+### Bug fixes:
+
+* UI: Fix cancel plugin command (#3903 #3890)
+* Fix the links for the default Quake sounds for crowdfunding (#3745) @dennisreimann
+* UI: Fix nav height issue on mobile devices (#3888) @bolatovumar
+* UI: Fix mark all notifications as seen return URL @dennisreimann
+* UI: When disabling a user, then it as an admin, attempting to remove or enable the user would fail while showing success in the UI (#3829 #3832) @rustywave
+* Deleting an admin gives a 500 error, and cannot disable the same user (#3785, #3818) @rustywave
+* Fix some rate providers (#3813) @kukks
+* Dashboard: Do not display archived invoices in recent invoices (#3783) @dennisreimann
+* Error happening when broadcasting transactions weren't shown in the UI @NicolasDorier
+
+### Improvements:
+
+* Creating and editing a payment request now redirect to the payment request list (#3825) @rustywave
+* Several UI/UX improvement for the settings of crowdfund @dennisreimann @dstrukt
+* Improve the Refund flow @dstrukt (#3715 #3731) @dennisreimann
+* Improve email settings validation and UX (#3891) @NicolasDorier
+* Add spam rate limits for public invoice endpoints (#3782, #3889) @NicolasDorier
+* Greenfield doc: Adding description to `speedPolicy` parameter. (#3877) @ndeet
+* UI: Improvement of Crowdfund & POS Modal #3806 @dstrukt
+* Server Settings: Consolidate Storage and Files (#3863) @dennisreimann
+* Move `View` action to the `Name` column in Payouts & Payment Requests (#3873) @dstrukt @dennisreimann
+* Report shopify errors to the UI (Fix #3853) @NicolasDorier
+* Mobile header improvements (#3826) @dennisreimann
+* Simple Notification Modal Improvement (#3784) @dstrukt
+* Improve payouts UI (#3792) @dstrukt @dennisreimann
+* Update language to explicitly request view-only wallet files (b1f62f74cde09d124fe308f5af9e255522add288) @sethforprivacy
+
 ## 1.5.4
 
 ### New features:
